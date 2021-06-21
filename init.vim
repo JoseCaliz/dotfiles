@@ -49,7 +49,7 @@ set updatetime=50
 set shortmess+=c
 
 " Who does not use gruvbox
-colorscheme gruvbox
+colorscheme seoul256
 
 " Indentations the right way
 vnoremap < <gv 
@@ -85,7 +85,7 @@ nnoremap <Leader>= :vertical resize +5<CR>
 nnoremap <Leader>- :vertical resize -5<CR>
 vnoremap J :m '>+1<CR>gv=gv
 noremap K :m '<-2<CR>gv=gv
-nnoremap <leader>vwm :colorscheme gruvbox<bar>:set background=dark<CR>
+nnoremap <leader>vwm :colorscheme seoul256<bar>:set background=dark<CR>
 vnoremap x "_d
 
 set clipboard+=unnamedplus
