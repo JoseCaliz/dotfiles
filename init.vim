@@ -109,6 +109,7 @@ noremap <silent> <C-S-l> :vertical resize -5<CR>
 set mouse=n
 
 let g:slime_no_mappings = 1
+let g:slime_python_ipython = 1
 let g:python_pep8_indent_hang_closing=0
 
 xmap <c-c><c-c> <Plug>SlimeRegionSend gvh <Esc>
