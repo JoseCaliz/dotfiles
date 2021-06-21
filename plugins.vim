@@ -17,4 +17,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jpalardy/vim-slime'
     Plug 'preservim/vimux'
     Plug 'mhartington/oceanic-next'
+    " Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 call plug#end()
