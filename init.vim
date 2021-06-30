@@ -119,4 +119,7 @@ nmap <c-c><c-c> <Plug>SlimeParagraphSend
 nmap <c-c>v <Plug>SlimeConfig
 nmap <c-c>v <Plug>SlimeConfig
 
+nmap <c-h> <c-o>
+nmap <c-l> <c-i>
+
 autocmd bufreadpre *.csv setlocal textwidth=0 linebreak ft=csv
