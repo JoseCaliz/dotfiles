@@ -101,7 +101,7 @@ autocmd bufreadpre *.py let @q = '<C-v>'
 let g:slime_target = "tmux"
 
 " Configurar la ubicación de python para usar en ambiente virtual
-let g:python3_host_prog='/Users/josecaliz/virtual_envs/universidad/bin/python3'
+let g:python3_host_prog='~/virtual_envs/universidad/bin/python3'
 noremap <silent> <C-S-h> :vertical resize +5<CR>
 noremap <silent> <C-S-l> :vertical resize -5<CR>
 
