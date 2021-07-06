@@ -112,11 +112,14 @@ let g:slime_no_mappings = 1
 let g:slime_python_ipython = 1
 let g:python_pep8_indent_hang_closing=0
 
-xmap <c-c><c-c> <Plug>SlimeRegionSend gvh <Esc>
+let g:slime_default_config = {
+            \ 'socket_name': get(split($TMUX, ','), 0),
+            \ 'target_pane': '{bottom-left}' }
+let g:slime_dont_ask_default = 1
 
+xmap <c-c><c-c> <Plug>SlimeRegionSend gvh<ESC>
 imap <c-c><c-c> <ESC><Plug>SlimeParagraphSend i
 nmap <c-c><c-c> <Plug>SlimeParagraphSend
-nmap <c-c>v <Plug>SlimeConfig
 nmap <c-c>v <Plug>SlimeConfig
 
 nmap <c-h> <c-o>
