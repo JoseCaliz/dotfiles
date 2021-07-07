@@ -31,6 +31,7 @@ set backup
 set backupdir=/tmp/
 set list
 set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
+set clipboard+=unnamedplus
 
 " Pep8 and the idea of no longer sentences like this one, which is really long 
 highlight ColorColumn ctermbg=0 guibg=lightgrey
@@ -80,13 +81,10 @@ noremap K :m '<-2<CR>gv=gv
 nnoremap <leader>vwm :colorscheme seoul256<bar>:set background=dark<CR>
 vnoremap x "_d
 
-set clipboard+=unnamedplus
 
 " Notes Folder
 :let g:notes_directories = ['~/Documents/Notes']
 :let g:notes_suffix = '.txt'
-
-autocmd bufreadpre *.py let @q = '<C-v>'
 let g:slime_target = "tmux"
 
 " Configurar la ubicación de python para usar en ambiente virtual
@@ -111,4 +109,3 @@ nmap <c-c>v <Plug>SlimeConfig
 nmap <c-h> <c-o>
 nmap <c-l> <c-i>
 
-autocmd bufreadpre *.csv setlocal textwidth=0 linebreak ft=csv
