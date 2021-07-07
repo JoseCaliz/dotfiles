@@ -29,7 +29,6 @@ set textwidth=79
 set colorcolumn=79
 set backup
 set backupdir=/tmp/
-set indentexpr=GetPythonPEPIndent(v:lnum)
 set list
 set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
 
@@ -71,13 +70,6 @@ nnoremap <leader>N :Note<CR>
 " Insert current date useful for my notes
 nnoremap <F6>"=strftime("%Y-%m %A %d %H:%M:%S")<CR>P
 
-" Toggle NERDTree plugin
-let g:NERDTreeWinPos = "right"
-" nnoremap <Leader>n :NERDTreeToggle<CR>
-
-" CrtrlP with control-p
-nnoremap <C-p> :CtrlP<CR>
-
 nnoremap <Leader><CR> :so ~/.config/nvim/init.vim<CR>
 nnoremap <F5>:e ~/.config/nvim/init.vim<CR>
 
@@ -94,14 +86,11 @@ set clipboard+=unnamedplus
 :let g:notes_directories = ['~/Documents/Notes']
 :let g:notes_suffix = '.txt'
 
-nmap <D-/> <plug>NERDCommenterToggle
-xmap <D-/> <plug>NERDCommenterToggle
-
 autocmd bufreadpre *.py let @q = '<C-v>'
 let g:slime_target = "tmux"
 
 " Configurar la ubicación de python para usar en ambiente virtual
-let g:python3_host_prog='~/virtual_envs/universidad/bin/python3'
+let g:python3_host_prog='~/virtual_envs/jc/bin/python3'
 noremap <silent> <C-S-h> :vertical resize +5<CR>
 noremap <silent> <C-S-l> :vertical resize -5<CR>
 
@@ -109,9 +98,6 @@ noremap <silent> <C-S-l> :vertical resize -5<CR>
 set mouse=n
 
 let g:slime_no_mappings = 1
-let g:slime_python_ipython = 1
-let g:python_pep8_indent_hang_closing=0
-
 let g:slime_default_config = {
             \ 'socket_name': get(split($TMUX, ','), 0),
             \ 'target_pane': '{bottom-left}' }
