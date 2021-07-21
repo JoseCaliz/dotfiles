@@ -5,3 +5,4 @@ cp -r ~/.config/nvim/init.vim .
 cp -r ~/.config/nvim/vim-plug/plugins.vim .
 cp -r ~/Library/Preferences/com.googlecode.iterm2.plist .
 cp -r ~/.config/nvim/ftplugin .
+cp -r ~/.config/nvim/coc-settings.json .

@@ -6,3 +6,4 @@ cp -r ./init.vim ~/.config/nvim/init.vim
 cp -r ./development.sh ~/development.sh
 cp -r ./plugins.vim ~/.config/nvim/vim-plug/plugins.vim
 cp -r ./ftplugin ~/.config/nvim/
+cp -r ./coc-settings.json ~/.config/nvim/
