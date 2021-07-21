@@ -19,4 +19,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mhartington/oceanic-next'
     Plug 'tpope/vim-commentary'
     Plug 'hanschen/vim-ipython-cell', { 'for': 'python' }
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()

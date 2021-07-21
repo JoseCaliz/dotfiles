@@ -11,3 +11,12 @@ Location
 ```
 ~/Library/Preferences/com.googlecode.iterm2.plist
 ```
+
+## COC
+
+I started to use coc for some time ago. Make sure to install `coc-pyright`
+
+
+```
+CocInstall coc-pyright
+```

@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "/Users/jc/virtual_envs/universidad/bin/python",
+    "python.venvPath": "/Users/jc/virtual_envs",
+    "python.linting.flake8Enabled": true
+}
