@@ -48,7 +48,7 @@ set cmdheight=2
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
-set updatetime=300
+set updatetime=100
 
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
@@ -103,22 +103,20 @@ nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
 nnoremap <leader>n :bnext<CR>
 nnoremap <leader>b :bprevious<CR>
 nnoremap <leader>d :bdelete<CR>
+nnoremap <leader>pp /^\# %%<CR>
 
 " Taking notes on VIM? why?
 nnoremap <leader>N :Note<CR>
 
 " Insert current date useful for my notes
-nnoremap <F6>"=strftime("%Y-%m %A %d %H:%M:%S")<CR>P
+nnoremap <F6> "=strftime("%Y-%m %d")<CR>PI# <esc>
 
 nnoremap <Leader><CR> :so ~/.config/nvim/init.vim<CR>
 nnoremap <F5>:e ~/.config/nvim/init.vim<CR>
 
 nnoremap <Leader>= :vertical resize +5<CR>
 nnoremap <Leader>- :vertical resize -5<CR>
-vnoremap J :m '>+1<CR>gv=gv
-vnoremap K :m '<-2<CR>gv=gv
 nnoremap <leader>vwm :colorscheme seoul256<bar>:set background=dark<CR>
-vnoremap x "_d
 
 
 " Notes Folder
@@ -127,9 +125,11 @@ vnoremap x "_d
 let g:slime_target = "tmux"
 
 " Configurar la ubicación de python para usar en ambiente virtual
-let g:python3_host_prog='~/virtual_envs/universidad/bin/python3'
-" noremap <silent> <A-S-h> :vertical resize +5<CR>
-" noremap <silent> <A-S-l> :vertical resize -5<CR>
+let g:python3_host_prog='~/virtual_envs/jc/bin/python'
+
+" ˙
+noremap <silent> ∆ :vertical resize -5<CR>
+noremap <silent> ˚ :vertical resize +5<CR>
 
 " Esta es de esas cosas donde el mouse definitivamente es más práctico
 set mouse=n
@@ -147,3 +147,19 @@ nmap <c-c>v <Plug>SlimeConfig
 
 nmap <c-h> <c-o>
 nmap <c-l> <c-i>
+
+" Better search through file
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap J mzJ`z
+
+" Jumplist mutations
+nnoremap <expr> k (v:count > 5 ?  "m'" . v:count : "") . 'k'
+nnoremap <expr> j (v:count > 5 ?  "m'" . v:count : "") . 'j'
+
+" Moving Text
+vnoremap <silent> J :m '>+1<CR>gv=gv
+vnoremap <silent> K :m '<-2<CR>gv=gv
+inoremap <C-j> <esc>:m .+1<CR>==
+inoremap <C-k> <esc>:m .-2<CR>==
+" nnoremap <leader>k :m .-2<CR>==
