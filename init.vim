@@ -118,10 +118,9 @@ nnoremap <Leader>= :vertical resize +5<CR>
 nnoremap <Leader>- :vertical resize -5<CR>
 nnoremap <leader>vwm :colorscheme seoul256<bar>:set background=dark<CR>
 
-
 " Notes Folder
-:let g:notes_directories = ['~/Documents/Notes']
-:let g:notes_suffix = '.txt'
+let g:notes_directories = ['~/Documents/Notes']
+let g:notes_suffix = '.txt'
 let g:slime_target = "tmux"
 
 " Configurar la ubicación de python para usar en ambiente virtual
@@ -139,11 +138,6 @@ let g:slime_default_config = {
             \ 'socket_name': get(split($TMUX, ','), 0),
             \ 'target_pane': '{bottom-left}' }
 let g:slime_dont_ask_default = 1
-
-xmap <c-c><c-c> <Plug>SlimeRegionSend gvh<ESC>
-imap <c-c><c-c> <ESC><Plug>SlimeParagraphSend i
-nmap <c-c><c-c> <Plug>SlimeParagraphSend
-nmap <c-c>v <Plug>SlimeConfig
 
 nmap <c-h> <c-o>
 nmap <c-l> <c-i>
@@ -163,3 +157,5 @@ vnoremap <silent> K :m '<-2<CR>gv=gv
 inoremap <C-j> <esc>:m .+1<CR>==
 inoremap <C-k> <esc>:m .-2<CR>==
 " nnoremap <leader>k :m .-2<CR>==
+
+nmap t i
