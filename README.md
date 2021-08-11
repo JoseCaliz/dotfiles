@@ -20,3 +20,10 @@ I started to use coc for some time ago. Make sure to install `coc-pyright`
 ```
 CocInstall coc-pyright
 ```
+
+## Keyboard Layout
+
+Copy the bundle to:
+```
+~/Library/Keyboard Layouts/
+```
