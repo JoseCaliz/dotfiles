@@ -1,7 +1,6 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'Vimjas/vim-python-pep8-indent'
     Plug 'flazz/vim-colorschemes'
-    Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
     Plug 'jremmen/vim-ripgrep'
     Plug 'leafgarland/typescript-vim'
     Plug 'lyuts/vim-rtags'
@@ -20,4 +19,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-commentary'
     Plug 'hanschen/vim-ipython-cell', { 'for': 'python' }
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
+    Plug 'nvim-telescope/telescope-fzy-native.nvim'
 call plug#end()
