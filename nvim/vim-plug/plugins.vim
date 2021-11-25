@@ -24,4 +24,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nvim-telescope/telescope-fzy-native.nvim'
     Plug 'godlygeek/tabular'
     Plug 'plasticboy/vim-markdown'
+    Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 call plug#end()

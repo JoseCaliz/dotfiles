@@ -99,7 +99,7 @@ function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')
   elseif (coc#rpc#ready())
-    call CocActionAsync('doHover')
+    call CocActionAsync('doHover', )
   else
     execute '!' . &keywordprg . " " . expand('<cword>')
   endif
@@ -134,11 +134,11 @@ let g:notes_suffix = '.txt'
 let g:slime_target = "tmux"
 
 " Configurar la ubicación de python para usar en ambiente virtual
-let g:python3_host_prog='~/virtual_envs/jc/bin/python'
+let g:python3_host_prog='/Users/josecaliz/virtual_envs/mo/bin/python'
 
 " ˙
-noremap <silent> ∆ :vertical resize -5<CR>
-noremap <silent> ˚ :vertical resize +5<CR>
+" noremap <silent> ∆ :vertical resize -5<CR>
+" noremap <silent> ˚ :vertical resize +5<CR>
 
 " Esta es de esas cosas donde el mouse definitivamente es más práctico
 set mouse=n
@@ -167,3 +167,11 @@ vnoremap <silent> K :m '<-2<CR>gv=gv
 inoremap <C-j> <esc>:m .+1<CR>==
 inoremap <C-k> <esc>:m .-2<CR>==
 " nnoremap <leader>k :m .-2<CR>==
+"
+let g:VM_maps = {}
+let g:VM_maps["Add Cursor Down"] = '<C-j>'
+let g:VM_maps["Add Cursor Up"] = '<C-k>'
+let g:VM_maps["Find Under"] = '<C-n>'
+
+" Leader of mult-line mapping
+let g:VM_leader = '\'
