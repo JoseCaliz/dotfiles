@@ -57,8 +57,8 @@ set shortmess+=c
 colorscheme seoul256
 
 " Indentations the right way
-vnoremap < <gv 
-vnoremap > >gv 
+vnoremap <silent> < <gv 
+vnoremap <silent> > >gv 
 
 let mapleader = " "
 " Use tab for trigger completion with characters ahead and navigate.
@@ -175,3 +175,31 @@ let g:VM_maps["Find Under"] = '<C-n>'
 
 " Leader of mult-line mapping
 let g:VM_leader = '\'
+
+" airline configuration
+"
+" let g:airline_highlighting_cache = 1
+" disable tagbar integration (can be slow)
+let g:airline#extensions#tagbar#enabled = 0
+let g:airline#extensions#wordcount#enabled = 0
+let g:airline#extensions#whitespace#enabled = 0
+
+" disable fugitive integration (takes up space)
+let g:airline#extensions#branch#enabled = 0
+
+" show filename (no (compressed) path) in the tab
+let g:airline#extensions#tabline#enabled = 1
+
+" Show filename in top
+let g:airline#extensions#tabline#fnamemod = ':t'
+
+" save tabline space
+let g:airline#extensions#tabline#show_splits = 0
+let g:airline#extensions#tabline#show_tab_type = 0
+
+" Disable Highlighter
+let g:airline#extensions#highlighter#enable = 0
+
+" no need to show "filetype<fileencoding[fileformat]"
+let g:airline_section_x = ''
+let g:airline_section_y = ''
