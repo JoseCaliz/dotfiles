@@ -1,0 +1,33 @@
+
+<style>
+h1, .h1 {
+    font-family: "Trebuchet MS";
+    font-size: 2.5em !important;
+    color: #497564;
+}
+
+h2, .h2 {
+    font-family: "Trebuchet MS";
+    font-size: 2em !important;
+    color: #8f3f71;
+}
+
+.jp-mod-active .jp-Collapser-child{
+    background-color: #d79921;
+}
+.output {
+    flex-direction: row;
+}
+
+.cm-s-jupyter span.cm-keyword{
+    color: #d65d06;
+}
+
+.cm-s-jupyter span.cm-property{
+    color: #076678
+}
+
+.cm-s-jupyter span.cm-string {
+  color: #b57614
+}
+</style>
