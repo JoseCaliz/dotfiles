@@ -35,4 +35,31 @@ h3, .h3 {
 .cm-s-jupyter span.cm-string {
   color: #b57614
 }
+
+--- for rendering submitted notebook ---
+div.text_cell_render h1:first-child {
+    font-family: "Trebuchet MS";
+    font-size: 2em !important;
+    color: #497564;
+}
+
+div.text_cell_render h2 {
+    font-family: "Trebuchet MS";
+    font-size: 1.7em !important;
+    color: #8f3f71;
+}
+
+div.text_cell_render h3 {
+    font-family: "Trebuchet MS";
+    font-size: 1.4em !important;
+    color: #997563;
+}
+
+.highlight .kn, .highlight m {
+  color: #b57614
+}
+
+a.global_indexed_symbol{
+    color: #076678
+}
 </style>
