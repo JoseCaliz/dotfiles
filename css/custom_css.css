@@ -6,6 +6,10 @@ h1, .h1 {
     color: #497564;
 }
 
+h1.title{
+    margin-top:5px
+}
+
 div.title {
     text-align: center;
     background-color: #d0cfcf7a;
