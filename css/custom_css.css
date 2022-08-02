@@ -1,9 +1,11 @@
 <style>
+
 h1, .h1 {
     font-family: "Trebuchet MS";
     font-size: 2em !important;
     color: #497564;
 }
+
 
 h2, .h2 {
     font-family: "Trebuchet MS";
@@ -40,7 +42,7 @@ h3, .h3 {
 div.text_cell_render h1 {
     font-family: "Trebuchet MS";
     font-size: 2em !important;
-    color: #497564 !important;
+    color: #497564;
 }
 
 div.text_cell_render h2 {
@@ -86,5 +88,9 @@ a.global_indexed_symbol{
 div.output_subarea.output_text{
     padding: 16px;
     width: 1000px;
+}
+
+h1, .header {
+    color: white !important;
 }
 </style>
