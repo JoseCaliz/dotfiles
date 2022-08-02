@@ -6,15 +6,10 @@ h1, .h1 {
     color: #497564;
 }
 
-h1.title {
-    margin: 0;
-    /* padding:5px */
-}
-
 div.title {
     text-align: center;
     background-color: #d0cfcf7a;
-    height:40px
+    height:3em
 }
 
 h2, .h2 {
@@ -53,6 +48,7 @@ div.text_cell_render h1 {
     font-family: "Trebuchet MS";
     font-size: 2em !important;
     color: #497564;
+    margin: 0px
 }
 
 div.text_cell_render h2 {
