@@ -52,7 +52,7 @@ div.text_cell_render h1 {
     font-family: "Trebuchet MS";
     font-size: 2em !important;
     color: #497564;
-    margin: 0px
+    padding: 0px
 }
 
 div.text_cell_render h2 {
