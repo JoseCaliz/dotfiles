@@ -8,7 +8,7 @@ h1, .h1 {
 
 h1.title {
     margin: 0;
-    padding:5px
+    /* padding:5px */
 }
 
 div.title {
