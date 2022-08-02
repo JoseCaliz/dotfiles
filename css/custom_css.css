@@ -90,7 +90,7 @@ div.output_subarea.output_text{
     width: 1000px;
 }
 
-h1, .header {
+h1.header {
     color: white !important;
 }
 </style>
