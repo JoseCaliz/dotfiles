@@ -12,8 +12,10 @@ h1.title{
 
 div.title {
     text-align: center;
-    background-color: #d0cfcf7a;
-    height:3em
+    background-color: #d3e6d23d;
+    height:3em;
+    border-radius: 10px;
+    box-shadow: 3px 3px #536f533d;
 }
 
 h2, .h2 {
