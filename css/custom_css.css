@@ -71,22 +71,27 @@ div.text_cell_render h3 {
 }
 
 .highlight .s1 {
-  color: #b57614;
+    color: #b57614;
 }
 
 .highlight .k {
-  font-weight: 400;
-  color: #b57614;
+    font-weight: 550;
+    color: #b57614;
 }
 
 .highlight .ow {
-  color: #b57614;
-  font-weight: lighter;
+    color: #b57614;
+    font-weight: lighter;
 }
 
 .highlight .se {
-  color: #BB6622;
-  font-weight: lighter;
+    color: #BB6622;
+    font-weight: lighter;
+}
+
+.highlight .kn{
+    color: #d65d06;
+    font-weight: : 550;
 }
 
 .highlight .si {
