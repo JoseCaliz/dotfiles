@@ -1,8 +1,11 @@
 <style>
 
 h1, .h1 {
-    font-family: "Trebuchet MS";
+    font-family: "Trebuchet MS", sans-serif;
     font-size: 2em !important;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #497564;
+    text-transform: uppercase;
     color: #497564;
 }
 
@@ -52,8 +55,11 @@ h3, .h3 {
 
 /* --- for rendering submitted notebook --- */
 div.text_cell_render h1 {
-    font-family: "Trebuchet MS";
+    font-family: "Trebuchet MS", sans-serif;
     font-size: 2em !important;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #497564;
+    text-transform: uppercase;
     color: #497564;
     padding: 0px
 }
