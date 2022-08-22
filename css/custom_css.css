@@ -5,7 +5,7 @@ h1, .h1 {
     font-size: 2em !important;
     letter-spacing: 1px;
     border-bottom: 3px solid #497564;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #497564;
 }
 
@@ -59,9 +59,10 @@ div.text_cell_render h1 {
     font-size: 2em !important;
     letter-spacing: 1px;
     border-bottom: 3px solid #497564;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #497564;
-    padding: 0px
+    padding: 0px;
+    margin-top: 5px;
 }
 
 div.text_cell_render h2 {
