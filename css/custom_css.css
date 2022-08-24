@@ -118,4 +118,22 @@ div.output_subarea.output_text{
 h1.header {
     color: white !important;
 }
+
+.insights {
+    font-size:14px;
+    font-family:verdana;
+    line-height: 1.7em;
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+div.output_subarea {
+    padding: 0px
+}
+
+div.output_area pre {
+    margin: 5px
+}
+
 </style>
