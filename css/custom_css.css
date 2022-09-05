@@ -81,6 +81,10 @@ div.text_cell_render h3 {
     color: #b57614;
 }
 
+.highlight .s2 {
+    color: #b57614;
+}
+
 .highlight .k {
     font-weight: 550;
     color: #b57614;
