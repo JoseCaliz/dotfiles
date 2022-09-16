@@ -46,7 +46,7 @@ h3, .h3 {
 }
 
 .cm-s-jupyter span.cm-def {
-    color: #689d6a;
+    color: #407755;
 }
 
 .cm-s-jupyter span.cm-keyword{
@@ -54,11 +54,21 @@ h3, .h3 {
 }
 
 .cm-s-jupyter span.cm-property{
-    color: #98971a}
+    color: #717000;
+}
+
+.cm-s-jupyter span.cm-builtin{
+    color: #427b58;
+}
 
 .cm-s-jupyter span.cm-string {
-  color: #b57614
+    color: #956315;
 }
+
+.cm-s-jupyter span.cm-comment{
+    color: #928374;
+}
+
 
 /* --- for rendering submitted notebook --- */
 div.text_cell_render h1 {
