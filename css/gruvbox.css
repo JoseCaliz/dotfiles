@@ -136,7 +136,7 @@ div.text_cell_render h3 {
 
 /* cm-comment */
 .highlight .c1{
-    color: #828282;
+    color: #9f9f9f;
 }
 
 .highlight .mf{
@@ -173,6 +173,11 @@ div.text_cell_render h3 {
 /* cm-property */
 a.global_indexed_symbol{
     color: #d65d0e;
+}
+
+/* cm-def */ 
+.highlight .nf{
+    color: #407755;
 }
 
 div.output_subarea.output_text{
