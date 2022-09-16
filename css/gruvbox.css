@@ -50,11 +50,11 @@ h3, .h3 {
 }
 
 .cm-s-jupyter span.cm-keyword{
-    color: #458588;
+    color: #076678;
 }
 
 .cm-s-jupyter span.cm-property{
-    color: #717000;
+    color: #d65d0e;
 }
 
 .cm-s-jupyter span.cm-builtin{
@@ -62,11 +62,11 @@ h3, .h3 {
 }
 
 .cm-s-jupyter span.cm-string {
-    color: #956315;
+    color: #79740e;
 }
 
 .cm-s-jupyter span.cm-comment{
-    color: #928374;
+    color: #828282;
 }
 
 
