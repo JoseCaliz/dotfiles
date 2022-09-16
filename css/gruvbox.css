@@ -98,8 +98,28 @@ div.text_cell_render h3 {
     color: #997563;
 }
 
+.highlight .nn{
+    color: black;
+}
+
+span .n{
+    color: black
+}
+
+span .o{
+    color: black
+}
+
+span .p{
+    color: black
+}
+
+/* span .n{ */
+/*     color: black; */
+/* } */
+
 .highlight .s1 {
-    color: #b57614;
+    color: #79740e;
 }
 
 /* cm-string */
@@ -127,15 +147,9 @@ div.text_cell_render h3 {
     color: #8f3f71;
 }
 
-
 /* cm-keyword */
 .highlight .ow {
     color: #076678;
-    font-weight: lighter;
-}
-
-.highlight .se {
-    color: #BB6622;
     font-weight: lighter;
 }
 
