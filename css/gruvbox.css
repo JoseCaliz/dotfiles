@@ -98,25 +98,21 @@ div.text_cell_render h3 {
     color: #997563;
 }
 
-.highlight .nn{
+.nn{
     color: black;
 }
 
-span .n{
+span.n{
     color: black
 }
 
-span .o{
+span.o{
     color: black
 }
 
-span .p{
+span.p{
     color: black
 }
-
-/* span .n{ */
-/*     color: black; */
-/* } */
 
 .highlight .s1 {
     color: #79740e;
