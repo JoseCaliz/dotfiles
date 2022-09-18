@@ -4,9 +4,9 @@ h1, .h1 {
     font-family: "Trebuchet MS", sans-serif;
     font-size: 2em !important;
     letter-spacing: 1px;
-    border-bottom: 3px solid #497564;
+    /* border-bottom: 3px solid #497564; */
     /* text-transform: uppercase; */
-    color: #497564;
+    color: #183905;
 }
 
 h1.title{
@@ -25,13 +25,13 @@ div.title {
 h2, .h2 {
     font-family: "Trebuchet MS";
     font-size: 1.7em !important;
-    color: #8f3f71;
+    color: #336D13;
 }
 
 h3, .h3 {
     font-family: "Trebuchet MS";
     font-size: 1.4em !important;
-    color: #997563;
+    color: #60AA39;
 }
 
 .jp-mod-active .jp-Collapser-child{
@@ -88,9 +88,9 @@ div.text_cell_render h1 {
     font-family: "Trebuchet MS", sans-serif;
     font-size: 2em !important;
     letter-spacing: 1px;
-    border-bottom: 3px solid #497564;
+    /* border-bottom: 3px solid #497564; */
     /* text-transform: uppercase; */
-    color: #497564;
+    color: #183905;
     padding: 0px;
     margin-top: 5px;
 }
@@ -98,13 +98,13 @@ div.text_cell_render h1 {
 div.text_cell_render h2 {
     font-family: "Trebuchet MS";
     font-size: 1.7em !important;
-    color: #8f3f71;
+    color: #336D13;
 }
 
 div.text_cell_render h3 {
     font-family: "Trebuchet MS";
     font-size: 1.4em !important;
-    color: #997563;
+    color: #60AA39;
 }
 
 .highlight .nn{
