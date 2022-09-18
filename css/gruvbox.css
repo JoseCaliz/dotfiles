@@ -114,21 +114,21 @@ div.text_cell_render h3 {
     color: var(--header3_color);
 }
 
-.highlight .nn{
-    color: black;
-}
+/* .highlight .nn{ */
+/*     color: black; */
+/* } */
 
-.n{
-    color: black
-}
+/* .n{ */
+/*     color: black */
+/* } */
 
-.o{
-    color: black
-}
+/* .o{ */
+/*     color: black */
+/* } */
 
-.p{
-    color: black
-}
+/* .p{ */
+/*     color: black */
+/* } */
 
 .highlight .s1 {
     color: #79740e;
@@ -181,6 +181,21 @@ div.text_cell_render h3 {
     color: #427b58;
 }
 
+/* class keyword */
+.highlight .nc{
+    color: #076678
+}
+
+/* cm-def */ 
+.highlight .fm{
+    color: #407755;
+}
+
+/* cm-keyword */
+.highlight .bp{
+    color: #076678;
+}
+
 .highlight .si {
   color: #BB6622;
   font-weight: lighter;
@@ -224,6 +239,13 @@ div.output_subarea {
 
 div.output_area pre {
     margin: 5px
+}
+
+div.input_area{
+    border-color: #fbfbfb !important;
+    border-style: solid none none !important;
+    border-width: 2px medium medium !important;
+    border-radius: 0;
 }
 
 </style>
