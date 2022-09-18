@@ -183,7 +183,7 @@ div.text_cell_render h3 {
 
 /* class keyword */
 .highlight .nc{
-    color: #076678
+    color: #407755;
 }
 
 /* cm-def */ 
@@ -242,7 +242,7 @@ div.output_area pre {
 }
 
 div.input_area{
-    border-color: #fbfbfb !important;
+    border-color: rgb(210, 210, 210) !important;
     border-style: solid none none !important;
     border-width: 2px medium medium !important;
     border-radius: 0;
