@@ -84,9 +84,10 @@ body[data-jp-theme-light="true"] .jp-Notebook .CodeMirror.cm-s-jupyter{
 }
 
 body[data-jp-theme-light="true"] .lm-Widget.p-Widget.jp-CodeMirrorEditor.jp-Editor.jp-InputArea-editor {
-    border-color: rgb(210, 210, 210);
-    border-style: solid none none;
-    border-width: 2px medium medium;
+    border-color: rgb(210, 210, 210) !important;
+    border-style: solid none none !important;
+    border-width: 2px medium medium !important;
+    border-radius: 0;
 }
 
 /* --- for rendering submitted notebook --- */
