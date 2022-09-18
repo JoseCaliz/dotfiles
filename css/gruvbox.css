@@ -73,6 +73,15 @@ h3, .h3 {
     color: #a221f2;
 }
 
+body[data-jp-theme-light="true"] .jp-Notebook .CodeMirror.cm-s-jupyter{
+    background: rgb(241, 243, 244);
+}
+
+body[data-jp-theme-light="true"] .lm-Widget.p-Widget.jp-CodeMirrorEditor.jp-Editor.jp-InputArea-editor {
+    border-color: rgb(210, 210, 210);
+    border-style: solid none none;
+    border-width: 2px medium medium;
+}
 
 /* --- for rendering submitted notebook --- */
 div.text_cell_render h1 {
