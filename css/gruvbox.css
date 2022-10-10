@@ -13,6 +13,7 @@ h1, .h1 {
     /* border-bottom: 3px solid #497564; */
     /* text-transform: uppercase; */
     color: var(--header1_color);
+    border-bottom: 3px solid var(--header1_color);
 }
 
 h1.title{
@@ -95,7 +96,7 @@ div.text_cell_render h1 {
     font-family: "Trebuchet MS", sans-serif;
     font-size: 2em !important;
     letter-spacing: 1px;
-    /* border-bottom: 3px solid #497564; */
+    border-bottom: 3px solid var(--header1_color);
     /* text-transform: uppercase; */
     color: var(--header1_color);
     padding: 0px;
