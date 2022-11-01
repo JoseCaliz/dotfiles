@@ -238,6 +238,10 @@ div.output_subarea {
     padding: 0px
 }
 
+div.output_area pre{
+    margin: 0px
+}
+
 div.output_area pre {
     margin: 5px
 }
