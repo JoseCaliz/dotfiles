@@ -67,7 +67,7 @@
     color: var(--font_color);
 }
 .cm-s-jupyter span.cm-number{
-    color: var(--header2_color);
+    color: var(--number_color);
 }
 
 .cm-s-jupyter span.cm-def {
