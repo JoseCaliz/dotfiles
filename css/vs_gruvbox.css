@@ -100,7 +100,7 @@
 }
 
 body[data-jp-theme-light="true"] .jp-Notebook .CodeMirror.cm-s-jupyter{
-    background-color: #f7f3d366;
+    background-color: #f7f3d366 !important;
 }
 
 body[data-jp-theme-light="true"] .lm-Widget.p-Widget.jp-CodeMirrorEditor.jp-Editor.jp-InputArea-editor {
