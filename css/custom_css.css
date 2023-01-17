@@ -13,7 +13,8 @@
     --comment_color: #9f9f9f;
     --comment_color_2: #458588; /* equals sign */
     --operator_color: #a221f2;
-    --font_color: #3c3836 /* general font */
+    --font_color: #3c3836; /* general font */
+    --variable2_color: #b16286; /*self keyworda */
 }
 
 /* h1, .h1 { */
@@ -57,6 +58,10 @@
 /* .output { */
 /*     flex-direction: row; */
 /* } */
+
+.cm-s-jupyter span.cm-variable-2{
+    color: var(--variable2_color);
+}
 
 .cm-s-jupyter span.cm-variable{
     color: var(--font_color);
