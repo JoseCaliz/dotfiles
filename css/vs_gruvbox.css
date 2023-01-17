@@ -100,11 +100,11 @@
 }
 
 body[data-jp-theme-light="true"] .jp-Notebook .CodeMirror.cm-s-jupyter{
-    background: rgb(241, 243, 244);
+    background: #f9f5d7;
 }
 
 body[data-jp-theme-light="true"] .lm-Widget.p-Widget.jp-CodeMirrorEditor.jp-Editor.jp-InputArea-editor {
-    border-color: rgb(210, 210, 210) !important;
+    border-color: #f9f5d7 !important;
     border-style: solid none none !important;
     border-width: 2px medium medium !important;
     border-radius: 0;
