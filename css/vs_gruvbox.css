@@ -100,11 +100,11 @@
 }
 
 body[data-jp-theme-light="true"] .jp-Notebook .CodeMirror.cm-s-jupyter{
-    background-color: #f7f3d366 !important;
+    background-color: #fffdee66 !important;
 }
 
 body[data-jp-theme-light="true"] .lm-Widget.p-Widget.jp-CodeMirrorEditor.jp-Editor.jp-InputArea-editor {
-    border-color: #f9f5d7 !important;
+    border-color: #9b9b99 !important;
     border-style: solid none none !important;
     border-width: 2px medium medium !important;
     border-radius: 0;
