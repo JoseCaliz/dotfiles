@@ -1,108 +1,209 @@
 <style>
 
-h1, .h1 {
-    font-family: "Trebuchet MS", sans-serif;
-    font-size: 2em !important;
-    letter-spacing: 1px;
-    border-bottom: 3px solid #497564;
-    /* text-transform: uppercase; */
-    color: #497564;
+:root{
+    --header1_color: #204709;
+    --header2_color: #42841F;
+    --header3_color: #6EAF4B;
+    --keyword_color: #cc241d; /* import */
+    --string_color: #98971a;
+    --number_color: #b16286;
+    --def_color: #689d6a; /* class name */
+    --property_color: #d65d0e;
+    --builtin_color: #cc241d;
+    --comment_color: #9f9f9f;
+    --comment_color_2: #828282;
+    --operator_color: #a221f2;
 }
 
-h1.title{
-    padding:5px
-}
+/* h1, .h1 { */
+/*     font-family: "Trebuchet MS", sans-serif; */
+/*     font-size: 2em !important; */
+/*     letter-spacing: 1px; */
+/*     /1* border-bottom: 3px solid #497564; *1/ */
+/*     /1* text-transform: uppercase; *1/ */
+/*     color: var(--header1_color); */
+/*     border-bottom: 3px solid var(--header1_color); */
+/* } */
 
-div.title {
-    text-align: center;
-    background-color: #d3e6d23d;
-    height:3em;
-    border-radius: 10px;
-    box-shadow: 3px 3px #536f533d;
-    margin-bottom: 8px;
-}
+/* h1.title{ */
+/*     padding:5px */
+/* } */
 
-h2, .h2 {
-    font-family: "Trebuchet MS";
-    font-size: 1.7em !important;
-    color: #8f3f71;
-}
+/* div.title { */
+/*     text-align: center; */
+/*     background-color: #d3e6d23d; */
+/*     height:3em; */
+/*     border-radius: 10px; */
+/*     box-shadow: 3px 3px #536f533d; */
+/*     margin-bottom: 8px; */
+/* } */
 
-h3, .h3 {
-    font-family: "Trebuchet MS";
-    font-size: 1.4em !important;
-    color: #997563;
-}
+/* h2, .h2 { */
+/*     font-family: "Trebuchet MS"; */
+/*     font-size: 1.7em !important; */
+/*     color: var(--header2_color); */
+/* } */
 
-.jp-mod-active .jp-Collapser-child{
-    background-color: #d79921;
-}
+/* h3, .h3 { */
+/*     font-family: "Trebuchet MS"; */
+/*     font-size: 1.4em !important; */
+/*     color: var(--header3_color); */
+/* } */
+
+/* .jp-mod-active .jp-Collapser-child{ */
+/*     background-color: #d79921; */
+/* } */
 /* .output { */
 /*     flex-direction: row; */
 /* } */
 
+.cm-s-jupyter span.cm-number{
+    color: var(--header2_color);
+}
+
+.cm-s-jupyter span.cm-def {
+    color: var(--def_color);
+}
+
 .cm-s-jupyter span.cm-keyword{
-    color: #d65d06;
+    color: var(--keyword_color);
 }
 
 .cm-s-jupyter span.cm-property{
-    color: #076678
+    color: var(--property_color);
+}
+
+.cm-s-jupyter span.cm-builtin{
+    color: var(--builtin_color);
 }
 
 .cm-s-jupyter span.cm-string {
-  color: #b57614
+    color: var(--string_color);
 }
 
-/* --- for rendering submitted notebook --- */
-div.text_cell_render h1 {
-    font-family: "Trebuchet MS", sans-serif;
-    font-size: 2em !important;
-    letter-spacing: 1px;
-    border-bottom: 3px solid #497564;
-    /* text-transform: uppercase; */
-    color: #497564;
-    padding: 0px;
-    margin-top: 5px;
+.cm-s-jupyter span.cm-comment{
+    color: var(--comment_color_2);
 }
 
-div.text_cell_render h2 {
-    font-family: "Trebuchet MS";
-    font-size: 1.7em !important;
-    color: #8f3f71;
+.cm-s-jupyter span.cm-operator{
+    color: var(--operator_color);
 }
 
-div.text_cell_render h3 {
-    font-family: "Trebuchet MS";
-    font-size: 1.4em !important;
-    color: #997563;
+body[data-jp-theme-light="true"] .jp-Notebook .CodeMirror.cm-s-jupyter{
+    background: rgb(241, 243, 244);
 }
+
+body[data-jp-theme-light="true"] .lm-Widget.p-Widget.jp-CodeMirrorEditor.jp-Editor.jp-InputArea-editor {
+    border-color: rgb(210, 210, 210) !important;
+    border-style: solid none none !important;
+    border-width: 2px medium medium !important;
+    border-radius: 0;
+}
+
+/* /1* --- for rendering submitted notebook --- *1/ */
+/* div.text_cell_render h1 { */
+/*     font-family: "Trebuchet MS", sans-serif; */
+/*     font-size: 2em !important; */
+/*     letter-spacing: 1px; */
+/*     border-bottom: 3px solid var(--header1_color); */
+/*     /1* text-transform: uppercase; *1/ */
+/*     color: var(--header1_color); */
+/*     padding: 0px; */
+/*     margin-top: 5px; */
+/* } */
+
+/* div.text_cell_render h2 { */
+/*     font-family: "Trebuchet MS"; */
+/*     font-size: 1.7em !important; */
+/*     color: var(--header2_color); */
+/* } */
+
+/* div.text_cell_render h3 { */
+/*     font-family: "Trebuchet MS"; */
+/*     font-size: 1.4em !important; */
+/*     color: var(--header3_color); */
+/* } */
+
+/* .highlight .nn{ */
+/*     color: black; */
+/* } */
+
+/* .n{ */
+/*     color: black */
+/* } */
+
+/* .o{ */
+/*     color: black */
+/* } */
+
+/* .p{ */
+/*     color: black */
+/* } */
 
 .highlight .s1 {
-    color: #b57614;
+    color: var(--string_color);
 }
 
+/* cm-string */
 .highlight .s2 {
-    color: #b57614;
+    color: var(--string_color);
 }
 
+/* cm-keyword */
 .highlight .k {
-    font-weight: 550;
-    color: #b57614;
+    font-weight: 500;
+    color: var(--keyword_color);
 }
 
+/* cm-number */
+.highlight .mi{
+    color: var(--header2_color);
+}
+
+/* cm-comment */
+.highlight .c1{
+    color: var(--comment_color);
+}
+
+.highlight .mf{
+    color: var(--header2_color);
+}
+
+/* cm-keyword */
 .highlight .ow {
-    color: #b57614;
+    color: var(--keyword_color);
     font-weight: lighter;
 }
 
-.highlight .se {
-    color: #BB6622;
-    font-weight: lighter;
+/* cm-operator */
+.highlight .o{
+    color: var(--operator_color);
 }
 
+/* cm-keyword */
 .highlight .kn{
-    color: #d65d06;
-    font-weight: : 550;
+    color: var(--keyword_color);
+    font-weight: 500;
+}
+
+/* cm-builtin */
+.highlight .nb{
+    color: var(--builtin_color);
+}
+
+/* class keyword */
+.highlight .nc{
+    color: var(--def_color);
+}
+
+/* cm-def */ 
+.highlight .fm{
+    color: var(--def_color);
+}
+
+/* cm-keyword */
+.highlight .bp{
+    color: var(--keyword_color);
 }
 
 .highlight .si {
@@ -110,8 +211,14 @@ div.text_cell_render h3 {
   font-weight: lighter;
 }
 
+/* cm-property */
 a.global_indexed_symbol{
-    color: #076678
+    color: var(--property_color);
+}
+
+/* cm-def */ 
+.highlight .nf{
+    color: var(--def_color);
 }
 
 div.output_subarea.output_text{
@@ -119,9 +226,9 @@ div.output_subarea.output_text{
     width: 1000px;
 }
 
-h1.header {
-    color: white !important;
-}
+/* h1.header { */
+/*     color: white !important; */
+/* } */
 
 .insights {
     line-height: 1.7em;
@@ -140,8 +247,19 @@ div.output_subarea {
     padding: 0px
 }
 
+div.output_area pre{
+    margin: 0px
+}
+
 div.output_area pre {
     margin: 5px
+}
+
+div.input_area{
+    border-color: rgb(210, 210, 210) !important;
+    border-style: solid none none !important;
+    border-width: 2px medium medium !important;
+    border-radius: 0;
 }
 
 </style>
