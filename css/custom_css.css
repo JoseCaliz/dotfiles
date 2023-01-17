@@ -71,6 +71,7 @@
 
 .cm-s-jupyter span.cm-keyword{
     color: var(--keyword_color);
+    font-weight: lighter;
 }
 
 .cm-s-jupyter span.cm-property{
@@ -155,8 +156,8 @@ body[data-jp-theme-light="true"] .lm-Widget.p-Widget.jp-CodeMirrorEditor.jp-Edit
 
 /* cm-keyword */
 .highlight .k {
-    font-weight: 500;
     color: var(--keyword_color);
+    font-weight: lighter;
 }
 
 /* cm-number */
@@ -187,7 +188,7 @@ body[data-jp-theme-light="true"] .lm-Widget.p-Widget.jp-CodeMirrorEditor.jp-Edit
 /* cm-keyword */
 .highlight .kn{
     color: var(--keyword_color);
-    font-weight: 500;
+    font-weight: lighter;
 }
 
 /* cm-builtin */
