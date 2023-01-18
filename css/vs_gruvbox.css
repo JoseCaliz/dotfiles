@@ -15,7 +15,9 @@
     --operator_color: #a221f2;
     --font_color: #3c3836; /* general font */
     --variable2_color: #b16286; /*self keyworda */
+    --box_color: #fffdee66;
 }
+
 
 /* h1, .h1 { */
 /*     font-family: "Trebuchet MS", sans-serif; */
@@ -100,7 +102,7 @@
 }
 
 body[data-jp-theme-light="true"] .jp-Notebook .CodeMirror.cm-s-jupyter{
-    background-color: #fffdee66 !important;
+    background-color: var(--box_color) !important;
 }
 
 /* body[data-jp-theme-light="true"] .lm-Widget.p-Widget.jp-CodeMirrorEditor.jp-Editor.jp-InputArea-editor { */
@@ -266,10 +268,7 @@ div.output_area pre {
 }
 
 div.input_area{
-    border-color: rgb(210, 210, 210) !important;
-    border-style: solid none none !important;
-    border-width: 2px medium medium !important;
-    border-radius: 0;
+    border-color: var(--box_color) !important;
 }
 
 </style>
