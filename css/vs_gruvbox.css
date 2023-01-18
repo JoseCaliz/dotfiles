@@ -268,7 +268,7 @@ div.output_area pre {
 }
 
 div.input_area{
-    border-color: var(--box_color) !important;
+    background-color: var(--box_color) !important;
 }
 
 </style>
