@@ -239,7 +239,7 @@ div.output_subarea.output_text{
 }
 
 .jp-RenderedHTMLCommon :not(pre) > code{
-    background-color: none !important;
+    background-color: transparent !important;
 }
 
 /* h1.header { */
