@@ -238,6 +238,10 @@ div.output_subarea.output_text{
     width: 1000px;
 }
 
+.jp-RenderedHTMLCommon :not(pre) > code{
+    background-color: none !important;
+}
+
 /* h1.header { */
 /*     color: white !important; */
 /* } */
