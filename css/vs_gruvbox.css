@@ -94,7 +94,7 @@
 }
 
 .cm-s-jupyter span.cm-comment{
-    color: var(--comment_color_2);
+    color: var(--comment_color);
 }
 
 .cm-s-jupyter span.cm-operator{
@@ -180,6 +180,7 @@ body[data-jp-theme-light="true"] .jp-Notebook .CodeMirror.cm-s-jupyter{
 /* cm-comment */
 .highlight .c1{
     color: var(--comment_color);
+    font-weight: lighter;
 }
 
 .highlight .mf{
@@ -188,6 +189,7 @@ body[data-jp-theme-light="true"] .jp-Notebook .CodeMirror.cm-s-jupyter{
 
 .highlight .sd{
     color: var(--string_color);
+    font-weight: lighter;
 }
 
 /* cm-keyword */
