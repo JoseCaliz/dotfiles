@@ -167,9 +167,14 @@ body[data-jp-theme-light="true"] .jp-Notebook .CodeMirror.cm-s-jupyter{
     font-weight: lighter;
 }
 
+.highlight .kc{
+    color: var(--keyword_color);
+    font-weight: lighter;
+}
+
 /* cm-number */
 .highlight .mi{
-    color: var(--header2_color);
+    color: var(--number_color);
 }
 
 /* cm-comment */
@@ -178,7 +183,11 @@ body[data-jp-theme-light="true"] .jp-Notebook .CodeMirror.cm-s-jupyter{
 }
 
 .highlight .mf{
-    color: var(--header2_color);
+    color: var(--number_color);
+}
+
+.highlight .sd{
+    color: var(--string_color);
 }
 
 /* cm-keyword */
@@ -206,6 +215,7 @@ body[data-jp-theme-light="true"] .jp-Notebook .CodeMirror.cm-s-jupyter{
 /* class keyword */
 .highlight .nc{
     color: var(--def_color);
+    font-weight: lighter;
 }
 
 /* cm-def */ 
@@ -231,6 +241,11 @@ a.global_indexed_symbol{
 /* cm-def */ 
 .highlight .nf{
     color: var(--def_color);
+}
+
+/* self */
+.highlight .bp{
+    color: var(--variable2_color)
 }
 
 div.output_subarea.output_text{
@@ -270,6 +285,7 @@ div.output_area pre{
 div.output_area pre {
     margin: 5px
 }
+
 
 div.input_area{
     background-color: var(--box_color) !important;
