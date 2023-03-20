@@ -1,21 +1,28 @@
 <style>
 
 :root{
-    --header1_color: #204709;
+    --header1_color: #ae81ff;
     --header2_color: #42841F;
     --header3_color: #6EAF4B;
-    --keyword_color: #f92672; /* import */
-    --string_color: #e6db74;
-    --number_color: #b16286;
-    --def_color: #fd971f; /* class name */
-    --property_color: #a6e22e; /* python properties */
-    --builtin_color: #689d6a;
-    --comment_color: #75715e;
-    --operator_color: #f8f8f2;
-    --font_color: #a6e22e; /* general font */
-    --variable2_color: #9effff;; /*self keyworda */
-    --box_color: #49483E;
+    --box_color: #373831;
+    --cm_atom: #ae81ff;
+    --cm_attribute: #97b757;
     --cm_bracket: #f8f8f2;
+    --cm_builtin: #66d9ef;
+    --cm_comment: #75715e;
+    --cm_def: #fd971f;
+    --cm_link: #ae81ff;
+    --cm_error: #f8f8f0;
+    --cm_keyword: #f92672;
+    --cm_number: #ae81ff;
+    --cm_operator: #f8f8f2;
+    --cm_property: #a6e22e;
+    --cm_string: #e6db74;
+    --cm_variable: #f8f8f2;
+    --cm_variable_2: #9effff;
+    --cm_variable_3: #66d9ef;
+    --cm_tag: #f92672;
+    --cm_type: #5998a6;
 
 }
 
@@ -63,18 +70,26 @@
 /* } */
 
 .cm-s-jupyter span.cm-variable-2{
-    color: var(--variable2_color);
+    color: var(--cm_variable_2);
+}
+
+.cm-s-jupyter span.cm-attribute{
+    color: var(--cm_attribute);
 }
 
 .cm-s-jupyter span.cm-variable{
-    color: var(--font_color);
+    color: var(--cm_variable);
 }
 .cm-s-jupyter span.cm-number{
-    color: var(--number_color);
+    color: var(--cm_number);
+}
+
+.cm-s-jupyter span.cm-variable-3, .cm-s-jupyter span.cm-type {
+    color: var(--cm_variable_3)
 }
 
 .cm-s-jupyter span.cm-def {
-    color: var(--def_color);
+    color: var(--cm_def);
 }
 
 .cm-s-jupyter span.cm-bracket{
@@ -82,28 +97,28 @@
 }
 
 .cm-s-jupyter span.cm-keyword{
-    color: var(--keyword_color);
+    color: var(--cm_keyword);
     font-weight: lighter;
 }
 
 .cm-s-jupyter span.cm-property{
-    color: var(--property_color);
+    color: var(--cm_property);
 }
 
 .cm-s-jupyter span.cm-builtin{
-    color: var(--builtin_color);
+    color: var(--cm_builtin);
 }
 
 .cm-s-jupyter span.cm-string {
-    color: var(--string_color);
+    color: var(--cm_string);
 }
 
 .cm-s-jupyter span.cm-comment{
-    color: var(--comment_color);
+    color: var(--cm_comment);
 }
 
 .cm-s-jupyter span.cm-operator{
-    color: var(--operator_color);
+    color: var(--cm_operator);
 }
 
 body[data-jp-theme-light="true"] .jp-Notebook .CodeMirror.cm-s-jupyter{
@@ -158,81 +173,81 @@ body[data-jp-theme-light="true"] .jp-Notebook .CodeMirror.cm-s-jupyter{
 /* } */
 
 .highlight .s1 {
-    color: var(--string_color);
+    color: var(--cm_string);
 }
 
 /* cm-string */
 .highlight .s2 {
-    color: var(--string_color);
+    color: var(--cm_string);
 }
 
 /* cm-keyword */
 .highlight .k {
-    color: var(--keyword_color);
+    color: var(--cm_keyword);
     font-weight: lighter;
 }
 
 .highlight .kc{
-    color: var(--keyword_color);
+    color: var(--cm_keyword);
     font-weight: lighter;
 }
 
 /* cm-number */
 .highlight .mi{
-    color: var(--number_color);
+    color: var(--cm_number);
 }
 
 /* cm-comment */
 .highlight .c1{
-    color: var(--comment_color);
+    color: var(--cm_comment);
     font-weight: lighter;
 }
 
 .highlight .mf{
-    color: var(--number_color);
+    color: var(--cm_number);
 }
 
 .highlight .sd{
-    color: var(--string_color);
+    color: var(--cm_string);
     font-weight: lighter;
 }
 
 /* cm-keyword */
 .highlight .ow {
-    color: var(--keyword_color);
+    color: var(--cm_keyword);
     font-weight: lighter;
 }
 
 /* cm-operator */
 .highlight .o{
-    color: var(--operator_color);
+    color: var(--cm_operator);
 }
 
 /* cm-keyword */
 .highlight .kn{
-    color: var(--keyword_color);
+    color: var(--cm_keyword);
     font-weight: lighter;
 }
 
 /* cm-builtin */
 .highlight .nb{
-    color: var(--builtin_color);
+    color: var(--cm_builtin);
 }
 
 /* class keyword */
 .highlight .nc{
-    color: var(--def_color);
+    color: var(--cm_def);
     font-weight: lighter;
 }
 
 /* cm-def */ 
 .highlight .fm{
-    color: var(--def_color);
+    color: var(--cm_def);
 }
 
 /* cm-keyword */
 .highlight .bp{
-    color: var(--keyword_color);
+    color: var(--cm_keyword);
 }
 
 .highlight .si {
@@ -242,17 +257,17 @@ body[data-jp-theme-light="true"] .jp-Notebook .CodeMirror.cm-s-jupyter{
 
 /* cm-property */
 a.global_indexed_symbol{
-    color: var(--property_color);
+    color: var(--cm_property);
 }
 
 /* cm-def */ 
 .highlight .nf{
-    color: var(--def_color);
+    color: var(--cm_def);
 }
 
 /* self */
 .highlight .bp{
-    color: var(--variable2_color)
+    color: var(--cm_variable_2)
 }
 
 div.output_subarea.output_text{
