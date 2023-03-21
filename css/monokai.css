@@ -73,6 +73,10 @@
     color: var(--cm_variable_2);
 }
 
+.cm-s-jupyter .CodeMirror-cursor {
+    border-left: 3px solid #fefcff !important;
+}
+
 .cm-s-jupyter span.cm-attribute{
     color: var(--cm_attribute);
 }
