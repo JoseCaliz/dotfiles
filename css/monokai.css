@@ -134,6 +134,7 @@
 }
 
 body[data-jp-theme-light="true"] .jp-Notebook .CodeMirror.cm-s-jupyter{
+    color: var(--cm_variable);
     background-color: var(--box_color) !important;
 }
 
