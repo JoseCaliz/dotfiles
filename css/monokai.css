@@ -2,9 +2,9 @@
 
 :root{
     --header1_color: #ae81ff;
-    --header2_color: #42841F;
-    --header3_color: #6EAF4B;
-    --box_color: #373831;
+    --header2_color: #42841f;
+    --header3_color: #6eaf4b;
+    --box_color: #3e3d32;
     --cm_atom: #ae81ff;
     --cm_attribute: #97b757;
     --cm_bracket: #f8f8f2;
@@ -14,15 +14,17 @@
     --cm_link: #ae81ff;
     --cm_error: #f8f8f0;
     --cm_keyword: #f92672;
-    --cm_number: #ae81ff;
-    --cm_operator: #f8f8f2;
-    --cm_property: #a6e22e;
+    --cm_number: #66d9ef;
+    --cm_operator: #f92672;
+    --cm_property: #66d9ef;
     --cm_string: #e6db74;
-    --cm_variable: #f8f8f2;
-    --cm_variable_2: #9effff;
+    --cm_variable: #a6e22e;
+    --cm_variable_2: #f92672;
     --cm_variable_3: #66d9ef;
     --cm_tag: #f92672;
     --cm_type: #5998a6;
+    --cm_cursor: #f8f8f2;
+    --cm_atom: #66d9ef
 
 }
 
@@ -74,7 +76,7 @@
 }
 
 .cm-s-jupyter .CodeMirror-cursor {
-    border-left: 3px solid #fefcff !important;
+    border-left: 3px solid var(--cm_cursor) !important;
 }
 
 .cm-s-jupyter span.cm-attribute{
@@ -93,6 +95,7 @@
 }
 
 .cm-s-jupyter span.cm-def {
+    font-style: italic;
     color: var(--cm_def);
 }
 
