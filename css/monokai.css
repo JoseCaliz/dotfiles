@@ -108,8 +108,8 @@ div.CodeMirror-selected {
     background: #49483E;
 }
 
-.CodeMirror-line::selection, .cm-s-jupyter .CodeMirror-line > span::selection, .cm-s-jupyter .CodeMirror-line > span > span::selection {
-    background: rgba(73, 72, 62, .99);
+.cm-s-jupyter {
+    --jp-editor-mirror-lsp-highlight-background-color: rgba(73, 72, 62, .99);
 }
 
 .cm-s-jupyter span.cm-bracket{
