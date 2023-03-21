@@ -92,7 +92,7 @@
 
 .cm-s-jupyter .CodeMirror-matchingbracket {
   text-decoration: underline;
-  color: white !important;
+  color: var(--cm_attribute) !important;
 }
 
 .cm-s-jupyter span.cm-variable-3, .cm-s-jupyter span.cm-type {
