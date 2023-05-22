@@ -317,7 +317,7 @@
       "RGB_SAI",
       "RGB_SAD",
       "KC_TRNS",
-      "ANY(MU_MOD)",
+      "KC_NO",
       "KC_DEL",
       "KC_BRIU",
       "KC_F11",
